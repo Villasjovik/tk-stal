@@ -523,13 +523,12 @@ display:flex;align-items:center;gap:16px;margin-bottom:52px}
   transition:background-size .9s var(--ease) .35s}
 .sec-h2.in em{background-size:100% 1px}
 .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(212,168,75,.14);border-radius:16px;overflow:hidden}
-#sec-profil .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;border:0;border-radius:0;overflow:visible}
-#sec-profil .stats-grid.stats-three .sc:last-child{grid-column:1/-1}
+#sec-profil .stats-grid{grid-template-columns:1fr;border:0;border-radius:0;overflow:visible}
 .sc{padding:26px 18px;text-align:center;border-right:1px solid rgba(212,168,75,.1);position:relative;overflow:hidden;transition:background .3s;display:grid;grid-template-rows:1fr auto 1fr auto auto;row-gap:6px;min-height:172px;justify-items:center}
 .sc:last-child{border-right:none}
 #sec-profil .sc{grid-template-rows:auto auto auto;justify-items:start;text-align:left;
-  padding:28px 0;min-height:0;min-width:0;border-right:0;border-bottom:1px solid rgba(212,168,75,.14);row-gap:10px}
-#sec-profil .sc:nth-last-child(-n+2){border-bottom:0}
+  padding:36px 4px;min-height:0;min-width:0;border-right:0;border-bottom:1px solid rgba(212,168,75,.14);row-gap:10px}
+#sec-profil .sc:last-child{border-bottom:0}
 #sec-profil .sc:hover{background:linear-gradient(90deg,rgba(212,168,75,.05),transparent 60%)}
 .sc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
 background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);transition:transform .8s var(--ease)}
@@ -541,8 +540,8 @@ background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:
 #sec-profil .sc-bg{right:0;top:-10px;font-size:150px;color:rgba(212,168,75,.05)}
 .sc-num{grid-row:2;font-family:'Playfair Display',serif;font-size:clamp(26px,3.4vw,42px);font-weight:500;color:var(--gold);line-height:1;display:block;position:relative;z-index:1;
   font-feature-settings:"tnum" 1,"lnum" 1}
-#sec-profil .sc-num{font-size:clamp(30px,3.8vw,52px);transform-origin:left bottom;align-self:center}
-#sec-profil .sc-text,#sec-profil .sc-countries{font-size:clamp(24px,2.6vw,36px);line-height:1.18}
+#sec-profil .sc-num{font-size:clamp(48px,6vw,88px);transform-origin:left bottom}
+#sec-profil .sc-text,#sec-profil .sc-countries{font-size:clamp(30px,3.6vw,52px);line-height:1.18}
 #sec-profil .sc-countries{margin:0;padding:0;list-style:decimal inside}
 #sec-profil .sc-countries li{white-space:nowrap}
 #sec-profil .sc-suf{font-size:.5em}
@@ -1408,7 +1407,7 @@ position:relative;overflow:hidden;transition:color .35s}
         <p class="sp-eyebrow">Route 01</p>
         <h3>A kitchen garden built before spring</h3>
         <p class="sp-sub">“Turn autumn into the season beds are bought”</p>
-        <p class="sp-body">Raised beds are usually bought in spring, when the season is already running and the work has to be rushed. Villa Sjövik turns that round and arranges the whole kitchen garden this autumn: beds placed, edging set and everything prepared so the garden stands ready the day spring begins. There is still season left to show it in, and it gives a garden owner a reason to order now rather than in April. The beds and the pieces that belong to the kitchen garden are supplied for the production alongside the fee, and they stay in the garden afterwards. The goal is orders in the months before spring, not only during it.</p>
+        <p class="sp-body">Raised beds are usually bought in spring, when the season is already running and the work has to be rushed. Villa Sjövik turns that round and arranges the whole kitchen garden this autumn: beds placed, edging set and everything prepared so the garden stands ready the day spring begins. There is still season left to show it in, and it gives a garden owner a reason to order now rather than in April.</p>
         <div class="sp-foot"><span class="sp-tag">Autumn demand &middot; Ready for spring &middot; Earlier orders</span></div>
       </div>
 
@@ -1464,8 +1463,8 @@ position:relative;overflow:hidden;transition:color .35s}
       <h2 class="sec-h2 ws rv">Inspiration for an audience that invests in <em>home and garden.</em></h2>
     </div>
     <!-- Instagram Insights: IMG_8715.png (gender/age), VS referens. -->
-    <!-- Landskortet borttaget ur kanon på Lucas order 2026-09-18: ingen landsdemografi i offertmallarna. -->
-    <div class="stats-grid stats-three" lang="en">
+    <!-- Landskortet borttaget ur kanon (Lucas 2026-09-18). Korten staplas i en kolumn och rubriken till vänster följer med vid skroll, som V2-formen (Lucas 2026-09-21). -->
+    <div class="stats-grid" lang="en">
       <div class="sc rv d1">
         <div class="sc-bg" aria-hidden="true">195</div>
         <span class="sc-num"><span class="cu" data-v="195000" data-sep="true">195,000</span></span>
